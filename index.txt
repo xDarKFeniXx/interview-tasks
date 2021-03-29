@@ -1,0 +1,130 @@
+
+console.log('Hello, world!')// -> Hello, world!!!
+
+#include <stdio.h>
+int main()
+{
+  printf("Hello, World!\n");
+  return 0;
+}
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    cout << "Hello, World!";
+    return 0;
+}
+
+using System;
+namespace HelloWorld
+{
+    class Hello 
+    {
+        static void Main() 
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
+print("Hello, World!")
+
+<?php
+  echo "Hello, World!";
+?>
+
+> myString <- "Hello, World!"
+> print ( myString)
+
+program Hello;
+begin
+  writeln ('Hello, world!')
+end.
+
+Assembly (x86)
+.MODEL SMALL
+.STACK 100h
+.DATA
+    HelloMessage DB 'Hello World',13,10,'$'
+.CODE
+START:
+    mov ax,@data
+    mov ds,ax
+    mov ah,9
+    mov dx,OFFSET HelloMessage
+    int 21h
+    mov ah,4ch
+    int 21h
+END START
+
+
+object HelloWorld {
+  def main(args: Array[String]): Unit = {
+    println("Hello, World!")
+  }
+}
+
+program Helloworld;
+{$APPTYPE CONSOLE}
+uses sysutils;
+ 
+begin 
+  writeln('Hello, World!');
+  sleep(3000);
+end.
+
+
+package demo
+
+fun main(args : Array<String>) {
+  println("Hello, world!")
+}
+
+puts "Hello, World!"
+
+
+EXAMPLES OF 'HELLO WORLD'
+
+import Swift
+print("Hello, World!")
+
+#import <Foundation/Foundation.h>
+
+int main (int argc, const char * argv[])
+{
+        NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+        NSLog (@"Hello, World!");
+        [pool drain];
+        return 0;
+}
+
+PRINT "HELLO WORLD"
+
+
+Module Module1
+    Sub Main()
+        Console.WriteLine("Hello, World!")
+    End Sub
+End Module
+
+
+fn main() {
+    println!("Hello, World!");
+}
+
+main = putStrLn "Hello, World!"
+
+Сообщить("Hello, World!");
+
+print "Hello, World!\n";
+
+
+$strString = "Hello, World!"
+write-host $strString

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cell{
+            width: 30px;
+            height: 30px;
+        }
+        .black{
+            background-color: #745853;
+        }
+        .white{
+            background-color: #f4cd8d;
+        }
+        .container{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            z-index: 999;
+            overflow: hidden;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+        }
+        .clicked{
+            background-color: #ff0000;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            z-index: 1000;
+        }
+        .marked1{
+            background-color: #0000ff;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            z-index: 1000;
+        }
+        .marked2{
+            background-color: #0000ff;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            z-index: 1000;
+        }
+        .marked3{
+            background-color: #0000ff;
+            position: absolute;
+            top: 0;
+            left: 90px;
+            z-index: 1000;
+        }
+        .marked4{
+            background-color: #0000ff;
+            position: absolute;
+            top: 30px;
+            left: 120px;
+            z-index: 1000;
+        }
+        .marked5{
+            background-color: #0000ff;
+            position: absolute;
+            top: 90px;
+            left: 120px;
+            z-index: 1000;
+        }
+        .marked6{
+            background-color: #0000ff;
+            position: absolute;
+            top: 120px;
+            left: 90px;
+            z-index: 1000;
+        }
+        .marked7{
+            background-color: #0000ff;
+            position: absolute;
+            top: 120px;
+            left: 30px;
+            z-index: 1000;
+        }
+        .marked8{
+            background-color: #0000ff;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            z-index: 1000;
+        }
+        .area{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+          
+            top: -1000px;
+            left: -1000px;
+        }
+        .cover1{
+            position: absolute;
+            z-index: 1001;
+            top:240px;
+            left:0;
+            right: 0;
+            height: 60px;
+            background-color: white;
+        }
+        .cover2{
+            position: absolute;
+            z-index: 1001;
+            top:0;
+            left:240px;
+            right: 0;
+            height: 240px;
+
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body 
+>
+    <div class="area" id="area">
+        <div class="cell marked1"></div>
+        <div class="cell marked2"></div>
+        <div class="cell marked3"></div>
+        <div class="cell marked4"></div>
+        <div class="cell marked5"></div>
+        <div class="cell marked6"></div>
+        <div class="cell marked7"></div>
+        <div class="cell marked8"></div>
+        <div class="cell clicked"></div>
+    </div>
+    <div class="container" 
+    onclick="
+    let area=document.getElementById('area')
+    let posY=(Math.floor(event.clientY/30)*30)-60
+    let posX=(Math.floor(event.clientX/30)*30)-60
+    area.style.top=posY+'px'
+    area.style.left=posX+'px'
+
+"
+    >
+
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+      
+    </div>
+    <div class="cover1"></div>
+    <div class="cover2"></div>
+</body>
+</html>
