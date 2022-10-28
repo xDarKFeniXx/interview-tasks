@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(61, 35, 175);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(245, 16, 16, 0.867);
+    align-items: center;
+}
+.item{
+    background-color: #fff;
+    align-self: stretch;
+    flex-grow: 1;
+    min-width: 400px;
+}
+.buttons{
+    margin: 0 10px;
+    width: 400px;
+    height: 100px;
+}
+.buttons > button{
+    height: 100%;
+    width: 50%;
+}
+.bordered{
+    height: 100%;
+    width: 100%;
+    border: 5px solid green;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
